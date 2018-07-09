@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: cursive;
+  line-height: normal;
+  width: 100%;
+}
+
+.page {
+  background: white;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px;
+  border-bottom: 5px solid #ddd;
+}
+
+.logo img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.my-name {
+  font-family: 'Raleway', sans-sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.about-me {
+  display: block;
+  background: white;
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid mistyrose;
+  border-radius: 3px;
+}
+
+.about-me:hover {
+  background:rgb(179, 92, 37);
+}
+
+.carouse {
+  padding-top: 30px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* content */
+
+.grid-container {
+  padding-top: 30px;
+}
+
+.grid-container h1 {
+  margin: 0;
+  padding:0 0 10px 15px;
+  font-weight: lighter;
+  font-family: 'Raleway', sans-sans-serif;
+}
+
+.photo-grid{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  /* align-content: flex-start; */
+}
+
+.grid-items img {
+  /* display: block; */
+  width: 100%;
+
+  height: 250px;
+  border: 2px solid #ccc;
+  //border-radius: 5px;
+  padding: 5px;
+}
+
+.grid-items {
+  flex:1 0 1;
+  align-items: stretch;
+  border: 5px solid white;
+}
+
+figcaption {
+  font-family: 'Raleway', sans-sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.git-address {
+  display: block;
+  font-family: 'Roboto', sans-sans-serif;
+  font-size: 14px;
+  padding-top: 5px;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+.footer {
+  font-family: 'Raleway', sans-sans-serif;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 1.2em;
+  }
+  .grid-items {
+    width: 50%;
+  }
+  .carouse img{
+    max-height:400px;
+  }
+
+  .footer {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .page{
+    max-width: 960px;
+  }
+  .grid-items {
+    max-width: 33.33333%;
+  }
+  .grid-items img {
+    min-height: 250px;
+  }
+}
+
+
+/* @media screen and () {
+
+} */
